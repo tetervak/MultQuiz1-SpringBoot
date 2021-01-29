@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css" th:href="@{css/main.css}">
+    <title>Bad Input</title>
+</head>
+<body>
+<main>
+    <h1>Multiplication Quiz 1</h1>
+    <h2>Bad Input</h2>
+    <h3 class="message">Please, enter numbers!</h3>
+    <p>
+        <label class="problem_text">
+            <span th:text="${A}" class="number">2</span>
+                &times;
+            <span th:text="${B}" class="number">2</span> =
+        </label>
+        <span th:text="${userAnswer}" class="wrong">A</span>?
+    </p>
+    <p>
+        <a href="InputAnswer.html" th:href="@{InputAnswer}">Back to the Quiz</a>
+    </p>
+</main>
+<footer>Sheridan College, 2021</footer>
+</body>
+</html>
